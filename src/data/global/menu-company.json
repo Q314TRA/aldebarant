@@ -1,0 +1,36 @@
+[
+    {
+        "text": "Inicio",
+        "link": "/",
+        "isSubmenu": false
+    },
+    {
+        "text": "Servicios",
+        "link": "/",
+        "isSubmenu": true,
+        "submenu": [
+            {
+                "text": "About Us",
+                "link": "/about-us"
+            },
+            {
+                "text": "Contact Us",
+                "link": "/contact-us"
+            },
+            {
+                "text": "Leadership",
+                "link": "/leadership"
+            }
+        ]
+    },
+    {
+        "text": "Nosotros",
+        "link": "/about-us",
+        "isSubmenu": false
+    },
+    {
+        "text": "Contatanos",
+        "link": "/it-services",
+        "isSubmenu": false
+    }
+]

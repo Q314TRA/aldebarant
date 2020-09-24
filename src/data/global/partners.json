@@ -1,0 +1,88 @@
+[
+    {
+        "id": "slogan-tehcn-angular",
+        "image": "../img/technologies/angular.png",
+        "hover_image": "../img/technologies/angular.png",
+        "path": "/"
+    },
+    {
+        "id": "slogan-tehcn-reactnative",
+        "image": "../img/technologies/reactnative.png",
+        "hover_image": "../img/technologies/reactnative.png",
+        "path": "/"
+    },
+    {
+        "id": "slogan-tehcn-googlecloud",
+        "image": "../img/technologies/googlecloud.png",
+        "hover_image": "../img/technologies/googlecloud.png",
+        "path": "/"
+    },
+    {
+        "id": "slogan-tehcn-typescript",
+        "image": "../img/technologies/typescript.png",
+        "hover_image": "../img/technologies/typescript.png",
+        "path": "/"
+    },
+    {
+        "id": "slogan-tehcn-blockchain",
+        "image": "../img/technologies/blockchain.png",
+        "hover_image": "../img/technologies/blockchain.png",
+        "path": "/"
+    },
+    {
+        "id": "slogan-tehcn-oracle",
+        "image": "../img/technologies/oracle.png",
+        "hover_image": "../img/technologies/oracle.png",
+        "path": "/"
+    },
+    {
+        "id": "slogan-tehcn-docket",
+        "image": "../img/technologies/docket.png",
+        "hover_image": "../img/technologies/docket.png",
+        "path": "/"
+    },
+    {
+        "id": "slogan-tehcn-java",
+        "image": "../img/technologies/java.png",
+        "hover_image": "../img/technologies/java.png",
+        "path": "/"
+    },
+    {
+        "id": "slogan-tehcn-nativescript",
+        "image": "../img/technologies/nativescript.png",
+        "hover_image": "../img/technologies/nativescript.png",
+        "path": "/"
+    },
+    {
+        "id": "slogan-tehcn-react",
+        "image": "../img/technologies/react.png",
+        "hover_image": "../img/technologies/react.png",
+        "path": "/"
+    },
+    {
+        "id": "slogan-tehcn-nest",
+        "image": "../img/technologies/nest.png",
+        "hover_image": "../img/technologies/nest.png",
+        "path": "/"
+    },
+    {
+        "id": "slogan-tehcn-next-js",
+        "image": "../img/technologies/next-js.png",
+        "hover_image": "../img/technologies/next-js.png",
+        "path": "/"
+    }
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
