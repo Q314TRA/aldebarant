@@ -29,10 +29,42 @@ const ContactForm = () => {
     const onSubmit = (data, e) => {
         const form = e.target;
         setServerState({ submitting: true });
+
         axios({
             method: "post",
-            url: formUrl,
-            data: data
+            url: "https://api.mailjet.com/v3.1/send",
+            data: {
+                "Messages": [
+                    {
+                        "From": {
+                            "Email": "admin@aldebarant.com",
+                            "Name": "aldebarant"
+                        },
+                        "To": [
+                            {
+                                "Email": "admin@aldebarant.com",
+                                "Name": "aldebarant"
+                            }
+                        ],
+                        "Subject": data.subject,
+                        "TextPart": 'Concato web',
+                        "HTMLPart": `<h3>Contacto</h3>, <br/> 
+                    <p><strong>Email:<strong>${data.email}<p>
+                    <p><strong>Name:<strong>${data.name}<p>
+                    <p><strong>Mensaje:<strong>${data.subject}<p>
+                    `,
+                        "CustomID": "AppGettingStartedTest"
+                    }
+                ]
+            },
+            "headers": {
+                "content-type": "application/json"
+            },
+            "auth": {
+                username: '680487b3e6e8a0266c31aa2fab44510d',
+                password: '77b928e2042912b3ad6d773b886bf7f9'
+            }
+
         })
             .then(r => {
                 handleServerResponse(true, "Gracias! Por contactarse con nostros.", form);
