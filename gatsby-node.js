@@ -210,7 +210,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
     // Create Single IT Service page
 
-        console.log(result.data);
+        // console.log(result.data);
 
     const companyservices = result.data.allCompanyServicesJson.edges;
     companyservices.forEach(({ node }) => {
@@ -225,165 +225,165 @@ exports.createPages = async ({ graphql, actions }) => {
     
     // Create Single IT Service page
 
-    const itservices = result.data.allItServicesJson.edges;
-    itservices.forEach(({ node }) => {
-        createPage({
-            path: `it-service/${node.fields.slug}`,
-            component: servicePage,
-            context: {
-                slug: node.fields.slug
-            }
-        })
-    });
+    // const itservices = result.data.allItServicesJson.edges;
+    // itservices.forEach(({ node }) => {
+    //     createPage({
+    //         path: `it-service/${node.fields.slug}`,
+    //         component: servicePage,
+    //         context: {
+    //             slug: node.fields.slug
+    //         }
+    //     })
+    // });
 
-    // Create Single IT Solution page
-    const itsolutions = result.data.allItSolutionsJson.edges;
-    itsolutions.forEach(({ node }) => {
-        createPage({
-            path: `it-solution/${node.fields.slug}`,
-            component: solutionPage,
-            context: {
-                slug: node.fields.slug
-            }
-        })
-    });
+    // // Create Single IT Solution page
+    // const itsolutions = result.data.allItSolutionsJson.edges;
+    // itsolutions.forEach(({ node }) => {
+    //     createPage({
+    //         path: `it-solution/${node.fields.slug}`,
+    //         component: solutionPage,
+    //         context: {
+    //             slug: node.fields.slug
+    //         }
+    //     })
+    // });
 
-    // Create Single Case Study Page
+    // // Create Single Case Study Page
 
-    const caseStudies = result.data.allCaseStudiesJson.edges;
-    caseStudies.forEach(({ node, next, previous }) => {
-        createPage({
-            path: `case-study/${node.fields.slug}`,
-            component: caseStudyPage,
-            context: {
-                slug: node.fields.slug,
-                next,
-                previous
-            }
-        })
-    });
+    // const caseStudies = result.data.allCaseStudiesJson.edges;
+    // caseStudies.forEach(({ node, next, previous }) => {
+    //     createPage({
+    //         path: `case-study/${node.fields.slug}`,
+    //         component: caseStudyPage,
+    //         context: {
+    //             slug: node.fields.slug,
+    //             next,
+    //             previous
+    //         }
+    //     })
+    // });
 
     // Create Single Blog Page
 
-    const posts = result.data.allMarkdownRemark.edges;
-    posts.forEach(({ node, next, previous }) => {
-        createPage({
-            path: node.fields.slug,
-            component: singleBlogPage,
-            context: {
-                slug: node.fields.slug,
-                authorId: node.fields.authorId,
-                next,
-                previous
-            }
-        })
-    });
+    // const posts = result.data.allMarkdownRemark.edges;
+    // posts.forEach(({ node, next, previous }) => {
+    //     createPage({
+    //         path: node.fields.slug,
+    //         component: singleBlogPage,
+    //         context: {
+    //             slug: node.fields.slug,
+    //             authorId: node.fields.authorId,
+    //             next,
+    //             previous
+    //         }
+    //     })
+    // });
 
     // Create Blog List Page
     // Pagination
 
-    const postsPerPage = 6;
-    const numberOfPages = Math.ceil(posts.length / postsPerPage);
+    // const postsPerPage = 6;
+    // const numberOfPages = Math.ceil(posts.length / postsPerPage);
 
-    Array.from({ length: numberOfPages }).forEach((_, index) => {
-        const isFirstPage = index === 0;
-        const currentPage = index + 1;
-        if (isFirstPage) return;
-        createPage({
-            path: `blog/page/${currentPage}`,
-            component: blogList,
-            context: {
-                limit: postsPerPage,
-                skip: index * postsPerPage,
-                currentPage,
-                numberOfPages
-            }
-        })
-    })
+    // Array.from({ length: numberOfPages }).forEach((_, index) => {
+    //     const isFirstPage = index === 0;
+    //     const currentPage = index + 1;
+    //     if (isFirstPage) return;
+    //     createPage({
+    //         path: `blog/page/${currentPage}`,
+    //         component: blogList,
+    //         context: {
+    //             limit: postsPerPage,
+    //             skip: index * postsPerPage,
+    //             currentPage,
+    //             numberOfPages
+    //         }
+    //     })
+    // })
 
     // Create Tags Page
 
-    let tags = []
-    _.each(posts, edge => {
-        if (_.get(edge, 'node.frontmatter.tags')) {
-            tags = tags.concat(edge.node.frontmatter.tags)
-        }
-    })
+    // let tags = []
+    // _.each(posts, edge => {
+    //     if (_.get(edge, 'node.frontmatter.tags')) {
+    //         tags = tags.concat(edge.node.frontmatter.tags)
+    //     }
+    // })
 
-    tags = _.uniq(tags)
-    tags.forEach(tag => {
-        createPage({
-            path: `/tag/${slugify(tag)}`,
-            component: tagPage,
-            context: {
-                tag
-            }
-        })
-    })
+    // tags = _.uniq(tags)
+    // tags.forEach(tag => {
+    //     createPage({
+    //         path: `/tag/${slugify(tag)}`,
+    //         component: tagPage,
+    //         context: {
+    //             tag
+    //         }
+    //     })
+    // })
 
     // Create Categories Page
 
-    let categories = []
-    _.each(posts, edge => {
-        if (_.get(edge, 'node.frontmatter.categories')) {
-            categories = categories.concat(edge.node.frontmatter.categories)
-        }
-    })
+    // let categories = []
+    // _.each(posts, edge => {
+    //     if (_.get(edge, 'node.frontmatter.categories')) {
+    //         categories = categories.concat(edge.node.frontmatter.categories)
+    //     }
+    // })
 
-    categories = _.uniq(categories)
-    categories.forEach(category => {
-        createPage({
-            path: `/category/${slugify(category)}`,
-            component: categoryPage,
-            context: {
-                category
-            }
-        })
-    })
+    // categories = _.uniq(categories)
+    // categories.forEach(category => {
+    //     createPage({
+    //         path: `/category/${slugify(category)}`,
+    //         component: categoryPage,
+    //         context: {
+    //             category
+    //         }
+    //     })
+    // })
 
     // Create Authors Page
 
-    let authors = []
-    _.each(posts, edge => {
-        if (_.get(edge, 'node.fields.authorId')) {
-            authors = authors.concat(edge.node.fields.authorId)
-        }
-    })
+    // let authors = []
+    // _.each(posts, edge => {
+    //     if (_.get(edge, 'node.fields.authorId')) {
+    //         authors = authors.concat(edge.node.fields.authorId)
+    //     }
+    // })
 
-    authors = _.uniq(authors)
-    authors.forEach(author => {
-        createPage({
-            path: `/profile/${author}`,
-            component: authorPage,
-            context: {
-                author
-            }
-        })
-    })
+    // authors = _.uniq(authors)
+    // authors.forEach(author => {
+    //     createPage({
+    //         path: `/profile/${author}`,
+    //         component: authorPage,
+    //         context: {
+    //             author
+    //         }
+    //     })
+    // })
 
     // Create Date Page
 
-    let dates = []
-    let dateSlugs = []
-    _.each(posts, edge => {
-        if (_.get(edge, 'node.frontmatter.date')) {
-            dates = dates.concat(edge.node.frontmatter.date)
-            dateSlugs = dateSlugs.concat(edge.node.fields.dateSlug)
-        }
-    })
+    // let dates = []
+    // let dateSlugs = []
+    // _.each(posts, edge => {
+    //     if (_.get(edge, 'node.frontmatter.date')) {
+    //         dates = dates.concat(edge.node.frontmatter.date)
+    //         dateSlugs = dateSlugs.concat(edge.node.fields.dateSlug)
+    //     }
+    // })
 
-    dates = _.uniq(dates)
-    dateSlugs = _.uniq(dateSlugs)
-    dateSlugs.forEach((dateSlug, i) => {
-        createPage({
-            path: `/date/${dateSlug}`,
-            component: datePage,
-            context: {
-                date: dates[i],
-                dateSlug
-            }
-        })
-    })
+    // dates = _.uniq(dates)
+    // dateSlugs = _.uniq(dateSlugs)
+    // dateSlugs.forEach((dateSlug, i) => {
+    //     createPage({
+    //         path: `/date/${dateSlug}`,
+    //         component: datePage,
+    //         context: {
+    //             date: dates[i],
+    //             dateSlug
+    //         }
+    //     })
+    // })
 
     // Create Search Page
     createPage({
