@@ -40,7 +40,7 @@ const FeaturesArea = ({headingStyle, linkStyle, featureBoxStyle}) => {
     `);
     const features = featureData.allCompanyServicesJson.edges
     return (
-        <SectionWrap>
+        <SectionWrap id="content-servicios">
             <Container>
                 <Row>
                     {features.map(feature => (
@@ -51,7 +51,8 @@ const FeaturesArea = ({headingStyle, linkStyle, featureBoxStyle}) => {
                                 hoverImg={feature.node.icon.img_hover.childImageSharp}
                                 title={feature.node.title}
                                 desc={feature.node.excerpt}
-                                path={`/company-service/${feature.node.fields.slug}`}
+                                path={"#content-contacto"}
+                                // path={`/company-service/${feature.node.fields.slug}`}
                             />
                         </Col>
                     ))}
@@ -59,7 +60,7 @@ const FeaturesArea = ({headingStyle, linkStyle, featureBoxStyle}) => {
                 </Row>
                 <Row>
                     <Col lg={12}>
-                        <Heading {...headingStyle}>Los desafíos son solo oportunidades disfrazadas. <Anchor {...linkStyle} path="/">Crea con nosotros!</Anchor></Heading>
+                        <Heading {...headingStyle}>Los desafíos son solo oportunidades disfrazadas. <Anchor {...linkStyle} path="/">!Crea con nosotros!</Anchor></Heading>
                     </Col>
                 </Row>
             </Container>

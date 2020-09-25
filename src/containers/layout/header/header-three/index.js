@@ -1,7 +1,7 @@
 import React, { Fragment, useState, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types'
 import { useStaticQuery, graphql } from "gatsby"
-import { MdPhone, MdPlace, MdSearch } from "react-icons/md";
+import { MdPhone, MdPlace, MdSearch, MdMail } from "react-icons/md";
 import { Container, Row, Col } from '../../../../components/ui/wrapper'
 import Text from '../../../../components/ui/text'
 import Anchor from '../../../../components/ui/anchor'
@@ -36,11 +36,6 @@ const Header = ({ props, ...styles }) => {
                         id
                         text
                         link
-                        submenu {
-                            link
-                            text
-                        }
-                        
                     }
                 }
             }
@@ -93,14 +88,22 @@ const Header = ({ props, ...styles }) => {
                             <Col lg={12}>
                                 <HeaderMain top>
                                     <HeaderCol left>
-                                        <Text color={transparent ? '#fff' : 'textColor'} {...noticeStyle}><strong>Now Hiring:</strong> Are you a driven and motivated 1st Line IT Support Engineer?</Text>
+                                        <Text color={transparent ? '#fff' : 'textColor'} {...noticeStyle}><strong>Comunícate con un asesor:</strong> ¡Cuéntanos tu proyecto!</Text>
                                     </HeaderCol>
                                     <HeaderCol right>
                                         <HeaderElement {...phoneElStyle}>
                                             <HeaderInfoItem>
+                                                <Anchor path="mailto:contacto@aldebarant.com">
+                                                    <MdMail />
+                                                    <Text as="strong">contacto@aldebarant.com</Text>
+                                                </Anchor>
+                                            </HeaderInfoItem>
+                                        </HeaderElement>
+                                        <HeaderElement {...phoneElStyle}>
+                                            <HeaderInfoItem>
                                                 <Anchor path="tel:0573004859118">
                                                     <MdPhone />
-                                                    <Text as="strong">+57 (300) 485-9118</Text>
+                                                    <Text as="strong">(+57) 300 485-9118</Text>
                                                 </Anchor>
                                             </HeaderInfoItem>
                                         </HeaderElement>
@@ -108,7 +111,7 @@ const Header = ({ props, ...styles }) => {
                                             <HeaderInfoItem>
                                                 <Text>
                                                     <MdPlace />
-                                                    <Text as="span">58 Howard Street #2 San Francisco</Text>
+                                                    <Text as="span">Cra 41 #960 Poblado - Medellin Antioquia</Text>
                                                 </Text>
                                             </HeaderInfoItem>
                                         </HeaderElement>
@@ -136,11 +139,11 @@ const Header = ({ props, ...styles }) => {
                                                     menuData={menuArr}
                                                 />
                                             </HeaderNavigation>
-                                            <HeaderElement {...searchElStyle}>
+                                            {/* <HeaderElement {...searchElStyle}>
                                                 <Clickable className="search-btn" onClick={flyoutHandler}>
                                                     <MdSearch />
                                                 </Clickable>
-                                            </HeaderElement>
+                                            </HeaderElement> */}
                                             <HeaderElement
                                                 {...burgerBtnElStyle}
                                                 visibility={{ default: 'false', lg: 'true' }}

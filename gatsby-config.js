@@ -3,15 +3,15 @@
 module.exports = {
   pathPrefix: `/`,
   siteMetadata: {
-    title: "React Gatsby Technology & Blog Template",
-    titleTemplate: `Mitech`,
-    description: `Mitech is a Powerful & flexible Technology And Digital Software Gatsby Template. 06 Stunning Homepages are included in this template. You can use any template or mix content from different home pages for your website.`,
-    author: `@HasThemes`,
-    twitterUsername: `@HasThemes`,
+    title: "Aldebarant",
+    titleTemplate: `Aldebarant`,
+    description: `Desarrollo de software.`,
+    author: `@aldebarant`,
+    twitterUsername: `@aldebarant`,
     image: 'landing.png',
-    siteUrl: 'http://themesmummy.com/mitech/',
+    siteUrl: 'https://aldebarant.com',
     getform: "https://api.sendinblue.com/v3/smtp/email",
-    copyright: "Mitech. <a href='https://hasthemes.com/' target='_blank' rel='noopener noreferrer'>All Rights Reserved.</a>",
+    copyright: "Aldebarant. <a href='https://aldebarant.com' target='_blank' rel='noopener noreferrer'>All Rights Reserved.</a>",
     social: {
       facebook: "https://www.facebook.com",
       twitter: "https://www.twitter.com",
@@ -19,34 +19,20 @@ module.exports = {
       linkedin: "https://www.linkedin.com"
     },
     contact: {
-      phone: '190068668',
-      address: "58 Howard Street #2 San Francisco, CA 941",
-      email: 'hello@mitech.com',
-      website: "https://hasthemes.com/",
-      rating: "4.9",
+      phone: '+57 (300) 485-9118',
+      address: "Cra 41 #960 Poblado - Medellin Antioquia",
+      email: 'contacto@aldebarant.com',
+      website: "https://aldebarant.com",
+      rating: "5",
       customers: "700",
       clients: "3200",
       addressInfos: [
         {
-          "id": "san-francisco",
-          "state": "San Francisco",
-          "address": "58 Howard Street #2 San Francisco, CA 941",
-          "email": "contact.sanfrancisco@mitech.com",
-          "phone": "(+68)1221 09876"
-        },
-        {
-          "id": "new-york",
-          "state": "New York",
-          "address": "58 Howard Street #14 New York",
-          "email": "contact.newyork@mitech.com",
-          "phone": "(+68)1221 09878"
-        },
-        {
-          "id": "russia",
-          "state": "Russia",
-          "address": "The Courtyard Building 11 Curtain Road, Russia",
-          "email": "contact.russia@mitech.com",
-          "phone": "(+68)1221 09877"
+          "id": "med-antioquia",
+          "state": "Medellin",
+          "address": "Cra 41 #960 Poblado - Medellin Antioquia",
+          "email": "contacto@aldebarant.com",
+          "phone": "(+57) 300 485-9118"
         }
       ]
     }
@@ -189,23 +175,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-offline`,
       options: {
-        precachePages: [
-          `/about-us/`,
-          `/case-studies/`,
-          `/contact-us/`,
-          `/index-appointment/`,
-          `/index-infotechno/`,
-          `/index-processing/`,
-          `/index-resolutions/`,
-          `/index-services/`,
-          `/it-services/`,
-          `/it-solutions/`,
-          `/leadership/`,
-          `/it-service/*`,
-          `/case-study/*`,
-          `/case-study/*`,
-          `/blogs/*`
-        ]
+        precachePages: []
       }
     }
   ]

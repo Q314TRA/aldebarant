@@ -4,7 +4,7 @@ import { graphql } from 'gatsby'
 import SEO from "../../components/seo"
 import Layout from '../../containers/layout/layout'
 import Header from '../../containers/layout/header/header-three'
-import Footer from '../../containers/layout/footer/footer-one'
+import Footer from '../../containers/layout/footer/footer-two'
 import PageHeader from '../../components/pageheader'
 import { Container, Row, Col } from '../../components/ui/wrapper'
 import Heading from '../../components/ui/heading'

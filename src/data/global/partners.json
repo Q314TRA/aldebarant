@@ -24,12 +24,6 @@
         "path": "/"
     },
     {
-        "id": "slogan-tehcn-blockchain",
-        "image": "../img/technologies/blockchain.png",
-        "hover_image": "../img/technologies/blockchain.png",
-        "path": "/"
-    },
-    {
         "id": "slogan-tehcn-oracle",
         "image": "../img/technologies/oracle.png",
         "hover_image": "../img/technologies/oracle.png",

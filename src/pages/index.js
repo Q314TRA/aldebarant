@@ -2,7 +2,7 @@ import React from "react"
 import SEO from "../components/seo"
 import Layout from '../containers/layout/layout'
 import Header from '../containers/layout/header/header-three'
-import Footer from '../containers/layout/footer/footer-one'
+import Footer from '../containers/layout/footer/footer-two'
 import HeroArea from '../containers/index-resolutions/hero-area'
 import FeaturesArea from '../containers/index-resolutions/features-area'
 import AboutArea from '../containers/index-resolutions/about-area'
@@ -22,6 +22,7 @@ const IndexServices = ({ location, pageFromCMS }) => (
     <Header transparent />
     <main className="site-wrapper-reveal">
       <HeroArea />
+      
       <FeaturesArea />
 
       <AboutArea />

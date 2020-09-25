@@ -15,7 +15,7 @@ const Footer = ({heading, subheading}) => {
                 subtitle
                 path
             }
-            file(relativePath: {eq: "images/bg/mitech-landing-footer-bg-01.jpg"}) {
+            file(relativePath: {eq: "img/bgFooter.jpg"}) {
                 childImageSharp {
                     fluid(maxWidth: 1920, maxHeight: 628, quality: 100) {
                         ...GatsbyImageSharpFluid
@@ -37,10 +37,10 @@ const Footer = ({heading, subheading}) => {
                                 {subtitle && <Heading {...subheading}>{subtitle}</Heading>}                                
                                 <ButtonWrap>
                                     <Button 
-                                        to="https://hasthemes.com/2fkp"
+                                        to="#content-contacto"
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        skin="light">Purchase Now </Button>
+                                        skin="light">Comencemos!</Button>
                                 </ButtonWrap>
                             </FooterContent>
                         </Col>

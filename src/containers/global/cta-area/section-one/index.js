@@ -35,7 +35,7 @@ const CTASection = ({
                     </Col> 
                     <Col xl ={4} lg={5} className="text-center">
                         <Button 
-                            to="https://api.whatsapp.com/send?phone=573126178969" 
+                            to="https://api.whatsapp.com/send?phone=573004859118" 
                             {...ButtonOne} 
                             icon={<MdComment/>}
                             iconposition="left"

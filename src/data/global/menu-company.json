@@ -6,31 +6,17 @@
     },
     {
         "text": "Servicios",
-        "link": "/",
-        "isSubmenu": true,
-        "submenu": [
-            {
-                "text": "About Us",
-                "link": "/about-us"
-            },
-            {
-                "text": "Contact Us",
-                "link": "/contact-us"
-            },
-            {
-                "text": "Leadership",
-                "link": "/leadership"
-            }
-        ]
+        "link": "#content-servicios",
+        "isSubmenu": false
     },
     {
         "text": "Nosotros",
-        "link": "/about-us",
+        "link": "#content-nosotros",
         "isSubmenu": false
     },
     {
         "text": "Contatanos",
-        "link": "/it-services",
+        "link": "#content-contacto",
         "isSubmenu": false
     }
 ]

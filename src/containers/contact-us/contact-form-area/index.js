@@ -8,13 +8,13 @@ import {ContactFormWrapper, LeftBox} from './contact-form-area.style'
 
 const ContactFormArea = ({headingStyle, textStyle}) => {
     return (
-        <ContactFormWrapper>
+        <ContactFormWrapper id="content-contacto">
             <Container>
                 <Row alignitems="center">
                     <Col lg={6}>
                         <LeftBox>
                             <Heading {...headingStyle}>Para brindarte mayor información sobre <br/> nuestro servicios, <br/> <span>escribenos</span>.</Heading>
-                            <Text {...textStyle}>Tu solicitud sera analisada por un experto y respondida en la brevedad.</Text>
+                            <Text {...textStyle}>Tu solicitud será analizada por un experto y respondida en la brevedad.</Text>
                         </LeftBox>
                     </Col>
                     <Col lg={6}>

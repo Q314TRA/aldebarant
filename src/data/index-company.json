@@ -10,11 +10,11 @@
     },
     {
         "id": "company-about-content",
-        "title": "Somos una empresa de tecnologia enfocada en <br/> crear soluciones para <span>su empresa</span>",
+        "title": "Somos una empresa de tecnología enfocada en <br/> crear soluciones para <span>su empresa</span>",
         
         "heading": "<mark>10</mark> Años creando expericiencias",
         "subheading": "Diseñamos soluciones a la medida.",
-        "desc": "Contamos con un equipo de expertos, con mas de 10 años generando soluciones en areas como desarrollo de software, blockchain, diseño y marketing digital. <br/> nuestra metodologia se basa en la interacción continua y la coocreacion de soluciones que generen bienestar a todos los usuarios.",
+        "desc": "Contamos con un equipo de expertos, con más de 10 años generando soluciones en áreas como desarrollo de software, i+d+i, diseño y marketing digital. nuestra metodología se basa en la interacción continua y la cocreación de soluciones que generen bienestar a todos los usuarios.",
         "path": "/about-us"
     },
     {
@@ -28,32 +28,32 @@
             {
                 "icon": "./images/icons/icon-10-60x60.png",
                 "title": "Equipo",
-                "desc": "Contamos con un grupo de maginificos profesionales que no solo escriben codigo; estan enfocados en la experimentacion y creación de experiencias."
+                "desc": "Contamos con un grupo de magníficos profesionales que no solo escriben código; están enfocados en la experimentación y creación de experiencias."
             },
             {
                 "icon": "./images/icons/icon-30-90x90.png",
                 "title": "Nuestra metodologia",
-                "desc": "Nos concentramos en cortos entregables, que generen el mayor impacto posible, y permitan una temprana validacion con usuario final."
+                "desc": "Nos concentramos en cortos entregables, que generen el mayor impacto posible, y permitan una temprana validación con usuario final."
             },
             {
                 "icon": "./images/icons/icon-31-90x90.png",
                 "title": "Devops",
-                "desc": "Centramos todo nuestro proceso de desarrollo en el aprovechamiento de las tecnologias devops."
+                "desc": "Centramos todo nuestro proceso de desarrollo en el aprovechamiento de las tecnologías devops."
             },
             {
                 "icon": "./images/icons/icon-29-90x90.png",
                 "title": "Tecnologias",
-                "desc": "Contamos con un equipo de expertos, capacitado para desembolverse en un gran baridedad de tecnologias y lenguales de programación."
+                "desc": "Contamos con un equipo de expertos, capacitado para desenvolverse en un gran variedad de tecnologías y lenguajes de programación."
             },
             {
                 "icon": "./images/icons/icon-09-60x60.png",
                 "title": "Agilidad",
-                "desc": "No contamos con una metodologia unica, adaptamos los metodos que apliquen a los flujos de cada empresa."
+                "desc": "No contamos con una metodología única, adaptamos los métodos que apliquen a los flujos de cada empresa."
             },
             {
                 "icon": "./images/icons/icon-11-60x60.png",
                 "title": "Setuimiento y soporte",
-                "desc": "No tenemos soporte, en lugar de eso creamos una metodologia de evolucion continua, que garantiza tanto mantenibilidad del prouecto, como una evolucion sana."
+                "desc": "No tenemos soporte, en lugar de eso creamos una metodología de evolución continua, que garantiza tanto mantenibilidad del proyecto, como una evolución sana."
             }
         ] 
     }

@@ -25,7 +25,7 @@ const AboutArea = (props) => {
     const { title, subtitle, heading, subheading, desc, path } = aboutData.indexCompanyJson
     const { sectionTitleStyle, headingStyle, subheadingStyle, descStyle, btnStyle } = props
     return (
-        <SectionWrap>
+        <SectionWrap id="content-nosotros">
             <Container>
                 <Row>
                     <Col lg={12}>
@@ -45,8 +45,8 @@ const AboutArea = (props) => {
                     </Col>
                     <Col lg={{ span: 5, offset: 1 }}>
                         <AboutText>
-                            {desc && <Text {...descStyle}>{desc}</Text>}
-                            {path && <Button to={path} icon={<MdTrendingFlat />} {...btnStyle}>Discover Now</Button>}
+                            {desc && <Text {...descStyle}  >{desc}</Text>}
+                            {/* {path && <Button to={path} icon={<MdTrendingFlat />} {...btnStyle}>Discover Now</Button>} */}
                         </AboutText>
                     </Col>
                 </Row>
