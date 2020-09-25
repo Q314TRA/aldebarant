@@ -18,7 +18,7 @@ import ContactFormArea from '../containers/contact-us/contact-form-area'
 
 const IndexServices = ({ location, pageFromCMS }) => (
   <Layout location={location}>
-    <SEO title="Home" />
+    <SEO/>
     <Header transparent />
     <main className="site-wrapper-reveal">
       <HeroArea />
